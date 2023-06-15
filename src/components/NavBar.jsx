@@ -3,8 +3,6 @@ import { Box, Button, IconButton, useColorMode, VStack } from '@chakra-ui/react'
 import { HamburgerIcon, SunIcon, MoonIcon } from '@chakra-ui/icons';
 import { Link } from 'react-router-dom';
 
-const MotionBox = motion(Box);
-
 const NavBar = ({ isCollapsed, handleCollapse }) => {
   const { colorMode, toggleColorMode } = useColorMode();
   const isDark = colorMode === 'dark';
